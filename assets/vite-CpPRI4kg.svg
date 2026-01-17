@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 431.66 434.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0" y1="96.2" x2="431.66" y2="96.2" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a27fb9"/>
+      <stop offset=".07" stop-color="#9f84bb" stop-opacity=".97"/>
+      <stop offset=".16" stop-color="#9892c2" stop-opacity=".9"/>
+      <stop offset=".25" stop-color="#8daace" stop-opacity=".78"/>
+      <stop offset=".36" stop-color="#7ecbdf" stop-opacity=".61"/>
+      <stop offset=".37" stop-color="#7cd0e2" stop-opacity=".59"/>
+      <stop offset=".46" stop-color="#7dcde0" stop-opacity=".58"/>
+      <stop offset=".52" stop-color="#81c4dc" stop-opacity=".55"/>
+      <stop offset=".58" stop-color="#88b5d4" stop-opacity=".49"/>
+      <stop offset=".62" stop-color="#92a0ca" stop-opacity=".42"/>
+      <stop offset=".67" stop-color="#9e85bc" stop-opacity=".32"/>
+      <stop offset=".68" stop-color="#a27fb9" stop-opacity=".3"/>
+      <stop offset=".82" stop-color="#a583bb" stop-opacity=".29"/>
+      <stop offset=".89" stop-color="#b194c4" stop-opacity=".25"/>
+      <stop offset=".94" stop-color="#c6b1d4" stop-opacity=".18"/>
+      <stop offset=".98" stop-color="#e4daea" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="431.66" y1="338.3" x2="0" y2="338.3" xlink:href="#linear-gradient"/>
+  </defs>
+  <path class="cls-2" d="M95.84,192.4c11.49-55.75,60.84-97.66,119.99-97.66s108.5,41.91,119.99,97.66h95.84C419.32,84.12,327.41,0,215.83,0S12.33,84.12,0,192.4h95.84Z"/>
+  <path class="cls-1" d="M335.82,242.11c-11.49,55.75-60.84,97.66-119.99,97.66s-108.5-41.91-119.99-97.66H0c12.33,108.28,104.25,192.4,215.83,192.4s203.49-84.12,215.83-192.4h-95.84Z"/>
+</svg>
