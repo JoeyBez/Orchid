@@ -1,0 +1,326 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --text-color: rgba(0, 0, 0, 0.826);
+  --background-light: white;
+  --button-color: rgb(232, 232, 232);
+  --button-hover-color: rgb(201, 201, 201);
+  --link-color: rgba(0, 0, 0, 0.6);
+}
+
+button, input, textarea, .listing, .gallery{
+  animation: fadeIn 1s forwards;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: inherit;
+  margin-right: 1rem;
+  transition: 0.25s;
+}
+a:hover{
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+pre{
+  font-family: inherit;
+  line-height: 1.3;
+}
+
+body {
+  color: var(--text-color);
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--background-light);
+  padding-top: 5.5rem;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin:0;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: var(--button-color);
+  cursor: pointer;
+  transition: 0.25s;
+  color: var(--text-color);
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--button-hover-color);
+}
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+.listing{
+  border: 0.1rem solid transparent;
+  padding: 1rem;
+  margin: 0.5rem;
+  transition: 0.25s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform:translateY(1rem); }
+  to { opacity: 1; }
+}
+
+.listing:hover{
+  cursor: pointer;
+  /* border: 0.1rem solid white; */
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+.galleryImage{
+  width: 320px;
+  height: 420px;
+}
+
+.galleryImage > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+}
+
+.listingView{
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+  width:80vw;
+}
+
+.listingImage{
+  width: 30vw;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.listingImage > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.removeImage{
+  color: var(--background-light);
+  background-color: rgb(0, 0, 0, 0.3);
+  margin:0;
+  padding:1rem;
+  border-radius: 180px;
+  transition: 0.25s;
+}
+
+.removeImage:hover{
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+.removeImageIcon{
+  scale: 1.5;
+}
+
+footer{
+  padding-left: 1rem;
+  right:0;
+  left:0;
+}
+
+header{
+  top: 0;
+  left: 0;
+  right: 0;          /* Sticks the header to the top of the viewport */
+  z-index: 100; 
+  display: flex; /* Enables flexbox on the container */
+  align-items: center; /* Vertically centers the title and nav */
+  /* Optional: adjust spacing and position */
+  /* Pushes the title to the left and links to the right */
+  position: fixed;
+  background-color: var(--background-light);
+  opacity: 98%;
+  padding: 1rem;
+  height: 1.5rem;
+  padding-top: 2rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.184);
+}
+
+p{
+  line-height: 1;
+}
+
+input{
+  padding: 0.3rem;
+  font-size:medium;
+  color: var(--text-color);
+  background-color: var(--background-light);
+  border: 1px solid var(--button-hover-color)
+}
+
+textarea {
+  resize: none; /* Disables all user resizing */
+  padding: 0.3rem;
+  font-size:medium;
+  color: var(--text-color);
+  background-color: var(--background-light);
+  border: 1px solid var(--button-hover-color);
+  font-family: inherit;
+  width: 30vw;
+  height: 10rem;
+}
+
+select{
+  padding: 0.3rem;
+  font-size:medium;
+  color: var(--text-color);
+  background-color: var(--background-light);
+  border: 1px solid var(--button-hover-color)
+}
+
+.profileMenu{
+  margin-top: 0.2rem;
+  position: absolute;
+  display:grid;
+  width:8rem;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.108);
+}
+
+.menuOpt{
+  background-color: var(--background-light);
+  left:0;
+  right:0;
+  width:100%;
+  
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
+}
+
+.menuOpt:hover{
+  background-color: var(--button-color);
+}
+
+.menuContainer{
+  float: right;
+  position: relative;
+}
+
+.listingAboutGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  width:100%;
+}
+
+.worksButton{
+  padding: 0.5rem;
+  transition: 0.25s;
+  float: right;
+  margin:0;
+}
+.worksButton:hover{
+  background-color: var(--button-color);
+  cursor: pointer;
+}
+
+.confirmDelete{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 100vw;   
+  height: 100vh; 
+  overflow:hidden; 
+  background-color: rgba(0, 0, 0, 0.614);
+  z-index: 101;
+  
+  /* Centering children using Flexbox */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+}
+
+.confirmDelete > div{
+  text-align: center;
+  width: 25rem;
+  height: 10rem;
+  background-color: var(--background-light);
+  border-radius: 10px;
+  padding:1rem;
+}
+
+.deleteButton{
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: red;
+  cursor: pointer;
+  transition: 0.25s;
+  color: var(--background-light);
+  border-radius: 5px;
+  margin-left: 0.5rem;
+}
+.deleteButton:hover {
+  background-color: rgb(210, 4, 4);
+}
+
+.removeImage:hover{
+  cursor: pointer;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.profileIcon{
+  fill: var(--link-color);
+}
+.profileIcon:hover{
+  fill: var(--text-color);
+}
+
+/* Target the entire scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* thickness of the vertical scrollbar */
+  height: 10px; /* thickness of the horizontal scrollbar */
+}
+
+/* Target the track (the background area) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Target the thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: var(--button-hover-color);
+  border-radius: 10px;
+}
+
+/* Change thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--button-hover-color);
+}
