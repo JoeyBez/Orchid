@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <script>
-      // Save the path and redirect to root
-      sessionStorage.redirect = location.pathname;
-      location.replace(location.origin);
+      // Redirect all unknown routes to index.html
+      // so React Router can handle them
+      var path = location.pathname.replace(/\/$/, "");
+      location.replace(
+        location.origin + "/?redirect=" + encodeURIComponent(path)
+      );
     </script>
   </head>
   <body></body>
